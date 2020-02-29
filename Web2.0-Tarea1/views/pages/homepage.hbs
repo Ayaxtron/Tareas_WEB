@@ -1,0 +1,18 @@
+<h1>First Homework</h1>
+<p>This is my first page</p>
+<h2>Current Products</h2>
+<ul>
+    <li> ID       NAME        PRICE</li>
+    {{#each products}}
+    <li>
+        <P>{{id}}  {{name}}   $ {{price}}</P> <a href="/{{id}}/edit" >Edit</a>  <a href="/{{id}}/show">Show</a>
+        
+
+        
+    </li>
+    {{/each}}
+
+</ul>
+
+<a href="/insert">Add another product</a>
+
