@@ -34,3 +34,9 @@ exports.delete = (req, res) => {
     }
   });
 }
+
+exports.database = (req, res) => {
+  Task.all().then((data) => {
+    console.log(data);
+  })
+}
